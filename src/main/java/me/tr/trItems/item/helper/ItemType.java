@@ -1,0 +1,31 @@
+package me.tr.trItems.item.helper;
+
+public enum ItemType {
+
+    ARMOR,
+    ARMOR_STAND,
+    AXOLOTL_BUCKET,
+    BANNER,
+    BASE,
+    BOOK,
+    BUNDLE,
+    COMPASS,
+    CROSSBOW,
+    EXECUTABLE_ITEMS,
+    FIREWORK,
+    KNOWLEDGE_BOOK,
+    LEATHER_ARMOR,
+    MAP,
+    MMOITEM,
+    MUSIC_INSTRUMENT,
+    MYTHIC_MOBS,
+    OMINOUS_BOTTLE,
+    POTION,
+    SHIELD,
+    SKULL,
+    SPAWN_EGG,
+    SUSPICIOUS_STEW,
+    TROPICAL_FISH_BUCKET,
+    INVENTORY_ITEM
+
+}
