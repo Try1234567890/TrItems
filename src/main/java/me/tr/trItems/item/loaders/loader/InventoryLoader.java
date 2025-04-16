@@ -8,7 +8,7 @@ import org.bukkit.plugin.Plugin;
 public class InventoryLoader extends BaseLoader {
 
     public InventoryItem load(Plugin plugin, Section itemSection) {
-        BaseItem baseItem = main.getItemLoaderManager().loadItem(plugin, itemSection);
+        BaseItem baseItem = super.load(plugin, itemSection);
         int slot = getSlot(itemSection);
         return new InventoryItem(baseItem, slot);
     }
