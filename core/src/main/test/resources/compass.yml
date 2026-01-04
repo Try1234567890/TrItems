@@ -1,0 +1,91 @@
+COMPASS:
+    Material: "SUSPICIOUS_STEW"
+    Amount: 2
+    Renamable: false
+    Repairable:
+        Anvil:
+            Enabled: true
+            With: DIAMOND
+            Amount: 15 # How many points repair the item per/diamond
+        Custom:
+            Enabled: false
+            Amount:
+                Type: "PercentOfTotal" # PercentOfCurrent - Integer
+                Amount: 10
+            Cost:
+                Type: "Money"
+                Amount: 100
+    GameplayAmount:
+        Max: 10
+        Min: 10
+        Ender: true
+        Shulker: true
+    StackAmount:
+        Max: 10
+        Min: 10
+        Ender: true
+        Shulker: true
+    InventoryAmount:
+        Max: 10
+        Min: 10
+        Ender: true
+        Shulker: true
+    NBTs:
+        - Compound: "items.is_tr"
+          Value: true
+        - Compound: "items.id"
+          Value: "MythicBoots"
+    Permissions:
+        - Permission: "mythic.boots"
+          Aliases:
+              - "warrior.boots"
+              - "shaman.boots"
+    Owner: "Try___"
+    Rarity:
+        Name: "EPIC"
+        Color: "RED"
+    Damage: 10
+    Slot: 9
+    Lore:
+        - "<red> Make sure you equip this to have benefit."
+        - " "
+        - "<aqua> +3s Mana-Regen"
+        - "<red> -1 Health"
+    Name: "<yellow>[ Mythic Boots ]"
+    Enchants:
+        - ID: "MENDING"
+          Level: 1
+        - ID: "PROTECTION"
+          Level: 500
+    Attributes:
+        - Attribute: "ARMOR"
+          Operation: ADD_NUMBER
+          Amount: 10
+    CustomModelData: 12
+    #CustomModelData:
+    #    Colors: ["RED", "BLUE"]
+    #    Floats: [1, 1, 5]
+    #    Strings: ["Cisot", "IOdwqeoka", "moajdwk"]
+    #    Booleans: [true, false, false, true]
+    Functions:
+        - 1:
+              Actions:
+                  - ID: "Heal"
+                    Who: "[Owner]"
+              Conditions:
+                  - ID: "HasPermission"
+                    Permssion: "[Permission]"
+              Triggers:
+                  - "OnTakeDamage"
+                  - "OnMakeDamage"
+              Modifiers:
+                  - ID: "Change"
+                    Percent: 75
+                  - ID: "Delay"
+                    Amount: "5 Seconds"
+    Properties:
+        Lodestone:
+            Tracked: true
+            X: 10
+            Y: 10
+            Z: 10

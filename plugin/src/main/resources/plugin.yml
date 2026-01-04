@@ -1,0 +1,4 @@
+name: TrItems
+version: '1.0.0'
+main: me.tr.items.TrItemsPlugin
+api-version: '1.21'

@@ -1,0 +1,7 @@
+name: TrItems
+version: '1.0.0'
+main: me.tr.tritems.TrItems
+api-version: '1.21'
+authors: [ "Try___" ]
+commands:
+  items:
