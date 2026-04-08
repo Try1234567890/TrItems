@@ -5,3 +5,4 @@ build
 hotswap-agent.jar
 to-do.txt
 /plugin/run
+/core/run
